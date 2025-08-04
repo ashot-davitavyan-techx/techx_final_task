@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Popular Movies</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/variables.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header-navigation">
+				<div class="header-icon-container nav-left">
+					<button class="header-icon-button" id="menu-button">
+						<img
+							src="../media/menu-icon.svg"
+							class="filter-white"
+							alt="menu icon"
+							width="22.5px"
+							height="22.5px"
+						/>
+					</button>
+				</div>
+				<div class="header-icon-container nav-center">
+					<a
+						href="/html/index.html"
+						class="logo"
+						aria-label="Homepage"
+					>
+						<img
+							src="../media/logo_block.svg"
+							alt="header logo"
+							width="55px"
+							height="40px"
+						/>
+					</a>
+				</div>
+				<div class="header-icon-container nav-right">
+					<button
+						class="header-icon-button"
+						id="login-dropdown-button"
+					>
+						<img
+							src="../media/basic_person.svg"
+							class="filter-white"
+							alt="person logo"
+							width="23px"
+							height="23px"
+						/>
+						<div
+							class="login-dropdown-caret"
+							id="login-dropdown-caret"
+						></div>
+					</button>
+					<div
+						class="login-dropdown"
+						id="login-dropdown"
+					>
+						<div
+							class="login-dropdown-content"
+						>
+							<a
+								class="login-dropdown-link"
+								href="#"
+								>Login</a
+							>
+							<a
+								class="login-dropdown-link"
+								href="#"
+								>Sign Up</a
+							>
+						</div>
+					</div>
+					<button
+						class="header-icon-button"
+						id="search-button"
+					>
+						<img
+							src="../media/search_blue.svg"
+							alt="search icon"
+							width="24px"
+							height="24px"
+							id="search-icon"
+						/>
+					</button>
+				</div>
+			</nav>
+			<div class="searchbar" id="searchbar">
+				<img
+					src="../media/search_blue.svg"
+					class="filter-black"
+					width="22px"
+					height="22px"
+					alt="search icon"
+				/>
+				<input type="text" class="searchbar-input" placeholder="Search" id="searchbar-input"/>
+			</div>
+			<div class="side-menu">
+				<ul class="menu-list-primary">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="small">
+					<li><a href="#">Contribution Bible</a></li>
+					<li><a href="#">Discussions</a></li>
+					<li><a href="#">Leaderboard</a></li>
+					<li><a href="#">API</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+				<ul class="small">
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</header>
+	</body>
+	<script src="../js/index.js"></script>
+</html>
