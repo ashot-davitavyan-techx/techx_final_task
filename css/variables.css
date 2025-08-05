@@ -2,8 +2,10 @@
 	--white: #FFF;
 	--dark-blue: #032541;
 	--light-blue: #032541e6;
-	--gray: #00000099;
-	--light-gray: #acacac;
+	--gray: rgba(0, 0, 0, 0.6);
+	--light-gray: rgb(172, 172, 172);
 	--gray-border: #21252926;
+	--blue: rgb(35, 94, 167);
+	--very-light-blue: rgb(1, 180, 228)
 
 }

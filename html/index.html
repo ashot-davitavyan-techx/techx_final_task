@@ -10,12 +10,106 @@
 		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/variables.css" />
 		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/footer.css">
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" id="header">
 			<nav class="header-navigation">
-				<div class="header-icon-container nav-left">
-					<button class="header-icon-button" id="menu-button">
+				<div
+					class="header-nav-container nav-left mobile-hide"
+				>
+					<div class="header-icon-container">
+						<a
+							href="/html/index.html"
+							class="logo"
+							aria-label="Homepage"
+						>
+							<img
+								src="../media/logo_long.svg"
+								alt="header logo"
+								width="154px"
+								height="20px"
+							/>
+						</a>
+					</div>
+					<ul
+						class="header-dropdown-list ul-style-drop"
+					>
+						<li class="">
+							<a
+								href="#"
+								class="no-decoration-a"
+							>
+								Movies
+							</a>
+						</li>
+						<li class="">
+							<a
+								href=""
+								class="no-decoration-a"
+							>
+								TV Shows
+							</a>
+						</li>
+						<li class="">
+							<a
+								href=""
+								class="no-decoration-a"
+							>
+								People
+							</a>
+						</li>
+						<li class="">
+							<a
+								href=""
+								class="no-decoration-a"
+							>
+								More
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div
+					class="header-nav-container nav-right mobile-hide"
+				>
+					<div class="plus-sign">
+						<a class="logo" href="#">
+							<img
+								class="filter-white"
+								src="../media/plus-sign.svg"
+								alt="plus sign"
+								width="22.5px"
+								height="22.5px"
+							/>
+						</a>
+					</div>
+					<div class="translate-icon">EN</div>
+					<a class="link-style-drop" href="#">
+						Login
+					</a>
+					<a class="link-style-drop" href="#">
+						Join TMDB
+					</a>
+					<button
+						class="header-icon-button"
+						id="search-button"
+					>
+						<img
+							src="../media/search_blue.svg"
+							alt="search icon"
+							width="29px"
+							height="29px"
+							id="search-icon"
+						/>
+					</button>
+				</div>
+				<div
+					class="header-icon-container nav-left desktop-hide"
+				>
+					<button
+						class="header-icon-button"
+						id="menu-button"
+					>
 						<img
 							src="../media/menu-icon.svg"
 							class="filter-white"
@@ -25,7 +119,9 @@
 						/>
 					</button>
 				</div>
-				<div class="header-icon-container nav-center">
+				<div
+					class="header-icon-container nav-center desktop-hide"
+				>
 					<a
 						href="/html/index.html"
 						class="logo"
@@ -39,7 +135,9 @@
 						/>
 					</a>
 				</div>
-				<div class="header-icon-container nav-right">
+				<div
+					class="header-icon-container nav-right desktop-hide"
+				>
 					<button
 						class="header-icon-button"
 						id="login-dropdown-button"
@@ -97,16 +195,108 @@
 					height="22px"
 					alt="search icon"
 				/>
-				<input type="text" class="searchbar-input" placeholder="Search" id="searchbar-input"/>
+				<input
+					type="text"
+					class="searchbar-input"
+					placeholder="Search"
+					id="searchbar-input"
+				/>
 			</div>
-			<div class="side-menu">
-				<ul class="menu-list-primary">
-					<li></li>
-					<li></li>
-					<li></li>
+			<div class="side-menu" id="side-menu">
+				<ul class="ul-style-drop menu-list-primary">
+					<li>
+						<button
+							class="menu-toggle-button"
+						>
+							Movies
+						</button>
+						<ul
+							class="sub-menu"
+							id="sub-menu"
+						>
+							<li>
+								<a href="#">
+									Popular
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Top
+									Rated
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Upcoming
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Now
+									Playing
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button
+							class="menu-toggle-button"
+						>
+							TV Shows
+						</button>
+						<ul
+							class="sub-menu"
+							id="sub-menu"
+						>
+							<li>
+								<a href="#">
+									Popular
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Top
+									Rated
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									On TV
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Airing
+									Today
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button
+							class="menu-toggle-button"
+						>
+							People
+						</button>
+						<ul
+							class="sub-menu"
+							id="sub-menu"
+						>
+							<li>
+								<a href="#">
+									Popular
+									People</a
+								>
+							</li>
+						</ul>
+					</li>
 				</ul>
 				<ul class="small">
-					<li><a href="#">Contribution Bible</a></li>
+					<li>
+						<a href="#"
+							>Contribution Bible</a
+						>
+					</li>
 					<li><a href="#">Discussions</a></li>
 					<li><a href="#">Leaderboard</a></li>
 					<li><a href="#">API</a></li>
@@ -118,6 +308,62 @@
 				</ul>
 			</div>
 		</header>
+		<main class="main">
+
+		</main>
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="community-join">
+					<img class="mobile-hide" src="../media/logo_block.svg" alt="company logo" width="130px" height="93px">
+					<button class="join-button">
+						JOIN THE COMMUNITY
+					</button>
+				</div>
+				<div class="footer-links">
+					<h4 class="footer-heading">
+						THE BASICS
+					</h4>
+					<ul class="ul-style-drop">
+						<li><a class="link-style-drop" href="#">About TMDB</a></li>
+						<li><a class="link-style-drop" href="#">Contact Us</a></li>
+						<li><a class="link-style-drop" href="#">Support Forums</a></li>
+						<li><a class="link-style-drop" href="#">API Documentation</a></li>
+						<li><a class="link-style-drop" href="#">System Status</a></li>
+					</ul>
+				</div>
+				<div class="footer-links">
+					<h3 class="footer-heading">
+						GET INVOLVED
+					</h3>
+					<ul class="ul-style-drop">
+						<li><a class="link-style-drop" href="#">Contribution Bible</a></li>
+						<li><a class="link-style-drop" href="#">Add New Movie</a></li>
+						<li><a class="link-style-drop" href="#">Add New TV Show</a></li>
+					</ul>
+				</div>
+				<div class="footer-links">
+					<h3 class="footer-heading">
+						COMMUNITY
+					</h3>
+					<ul class="ul-style-drop">
+						<li><a class="link-style-drop" href="#">Guidelines</a></li>
+						<li><a class="link-style-drop" href="#">Discussions</a></li>
+						<li><a class="link-style-drop" href="#">Leaderboard</a></li>
+					</ul>
+				</div>
+				<div class="footer-links">
+					<h3 class="footer-heading">
+						LEGAL
+					</h3>
+					<ul class="ul-style-drop">
+						<li><a class="link-style-drop" href="#">Terms of Use</a></li>
+						<li><a class="link-style-drop" href="#">API Terms of Use</a></li>
+						<li><a class="link-style-drop" href="#">Privacy Policy</a></li>
+						<li><a class="link-style-drop" href="#">DMCA Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 	<script src="../js/index.js"></script>
 </html>
